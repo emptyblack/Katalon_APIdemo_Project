@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2018-12-16 19:11:52,2018-12-16 19:12:03,11.109s,PASSED
+,,,,,,
+Test Cases/Caclulator/Addition,,,2018-12-16 19:11:52,2018-12-16 19:11:57,4.888s,PASSED
+"sendRequest(findTestObject(""CalculatorSoapService/Addition""))",,,2018-12-16 19:11:52,2018-12-16 19:11:55,3.041s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CalculatorSoapService/Addition""))",,,2018-12-16 19:11:55,2018-12-16 19:11:57,1.580s,PASSED
+"verifyElementPropertyValue(response, ""AddResonse.AddResult"", 6)",,,2018-12-16 19:11:57,2018-12-16 19:11:57,0.031s,PASSED
+,,,,,,
+Test Cases/GetBankDetails,,,2018-12-16 19:11:57,2018-12-16 19:11:59,1.931s,PASSED
+"sendRequest(findTestObject(""SOAP/getBank""))",,,2018-12-16 19:11:57,2018-12-16 19:11:59,1.812s,PASSED
+,,,,,,
+Test Cases/HttpMethods,,,2018-12-16 19:11:59,2018-12-16 19:12:02,2.837s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2018-12-16 19:11:59,2018-12-16 19:12:00,1.166s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/CreateUser""))",,,2018-12-16 19:12:00,2018-12-16 19:12:00,0.486s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/UpdateUser""))",,,2018-12-16 19:12:00,2018-12-16 19:12:01,0.355s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/DeleteUser""))",,,2018-12-16 19:12:01,2018-12-16 19:12:02,0.696s,PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2018-12-16 19:12:02,2018-12-16 19:12:03,1.195s,PASSED
+"sendRequest(findTestObject(""UserRestService/ListUsers""))",,,2018-12-16 19:12:02,2018-12-16 19:12:02,0.550s,PASSED
+"response = sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2018-12-16 19:12:02,2018-12-16 19:12:03,0.469s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2018-12-16 19:12:03,2018-12-16 19:12:03,0.002s,PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2018-12-16 19:12:03,2018-12-16 19:12:03,0.014s,PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2018-12-16 19:12:03,2018-12-16 19:12:03,0.016s,PASSED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,,2018-12-16 19:12:03,2018-12-16 19:12:03,0.011s,PASSED
